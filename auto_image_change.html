@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>auto-image-change</title>
+<script type="text/javascript">
+	var arr = new Array("s1.jpg", "s2.jpg", "s3.jpg", "s4.jpg");
+	var i = 0;
+	function changeImage()
+	{
+		document.getElementById("i1").src = arr[i];
+		i++;
+		if(i == arr.length)
+		{
+			i=0;
+		}
+		setTimeout("changeImage()","1000");
+	}
+</script>
+</head>
+<body onload="changeImage()">
+<img id="i1" src="s1.jpg" width="500px" height="500px">
+</body>
+</html>

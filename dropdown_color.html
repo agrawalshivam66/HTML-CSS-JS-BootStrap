@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DropDown color</title>
+	<script type="text/javascript">
+		function changeColor()
+		{
+			var c = document.getElementById("s1").value;
+			document.getElementById("b").bgColor=c;
+		}
+	</script>
+</head>
+<body id="b">
+<select name="s1" id="s1" onchange="changeColor()">
+		<option value="" selected="">Set Background</option>
+	<option value="red">red</option>
+	<option value="blue">blue</option>
+	<option value="green">green</option>
+	<option value="purple">purple</option>
+	<option value="aqua">aqua</option>
+</select>
+</body>
+</html>

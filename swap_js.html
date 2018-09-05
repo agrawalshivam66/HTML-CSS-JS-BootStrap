@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>swap 2 number</title>
+	<script type="text/javascript">
+		function swap()
+		{
+			var i = document.getElementById("ftxt").value;
+			var j = document.getElementById("stxt").value;
+			var s = i;
+			i=j;
+			j=s;
+			document.getElementById("ftxt").value=i;
+			document.getElementById("stxt").value=j;
+		}
+	</script>
+</head>
+<body>
+First text : <input type="text" id="ftxt" style="background-color: red; color: yellow"></input>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Second text : <input type="text" id="stxt" style="background-color: red; color: yellow"></input>
+<br>
+<br>
+<input type="button" value=" Swap " onclick="swap()"></input>
+
+</body>
+</html>

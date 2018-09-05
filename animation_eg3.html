@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>animation 3</title>
+<style type="text/css">
+	.d1{
+		height: 500px;
+		width: 500px;
+		background-image: url('w.jpg');
+		transform: translate(200px, 50px);
+		animation: photo 5s infinite;
+	}
+	@keyframes photo{
+		0%{background-image: url('a.jpg');}
+		25%{background-image: url('w.jpg');}
+		50%{background-image: url('a.jpg');}
+		80%{background-image: url('w.jpg');}
+		100%{background-image: url('a.jpg');};
+
+	}
+</style>
+</head>
+<body>
+<div class="d1"></div>
+</body>
+</html>

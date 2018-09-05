@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>for loop</title>
+	<script type="text/javascript">
+		function show()
+		{
+			var line = document.getElementById("line").value;
+			var space = line/2;
+			var star = 1;
+			for(var i = 0; i < line; i++)
+			{
+				document.write("<br>");
+
+				for(var j = 0; j<space; j++)
+				{
+					document.write("&nbsp;&nbsp;");
+				}
+				for(var j=0; j<star;j++)
+				{
+					document.write("*");
+				}
+				if(i<(line/2)-1)
+				{
+					space = space-1;
+					star = star+2;
+				}
+				else
+				{
+					space = space+1;
+					star = star-2;
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+<input type="text" id="line"></input>
+<input type="button" value="Click here" onclick="show()"></input>
+</body>
+</html>

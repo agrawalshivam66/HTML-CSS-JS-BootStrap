@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>animation 4</title>
+<style type="text/css">
+	.d1{
+		height: 100px;
+		width: 200px;
+		background-color: red;
+		animation: col 5s infinite;
+		position: relative;
+	}
+	@keyframes col{
+		0%{background-color: red; left: 0px; top: 0px;}
+		25%{background-color: yellow; left: 1100px; top: 0px;}
+		50%{background-color: green; left: 1100px; top: 550px;}
+		80%{background-color: aqua; left: 0px; top: 550px;}
+		100%{background-color: red; left: 0px; top: 0px};
+
+	}
+</style>
+</head>
+<body>
+<div class="d1"></div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>while ex</title>
+	<script type="text/javascript">
+		function show()
+		{
+		var f = document.getElementById("fno").value;	
+		var s = document.getElementById("sno").value;
+		var c = f;
+		while(c<=s)
+		{
+			if(c%2!=0)
+			{
+				document.write(c + " is the odd number<br><hr>");
+				c++;
+			}
+			else c++;
+		}
+		}
+	</script>
+</head>
+<body>
+First number: <input type="number" id="fno"></input>
+Second number: <input type="number" id="sno"></input><br>
+<input type="button" value="Click here" onclick="show()"></input>
+</body>
+</html>
